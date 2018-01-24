@@ -5,6 +5,10 @@
 // maxChar("abcccccccd") === "c"
 // maxChar("apple 1231111") === "1"
 
+
+
+// first solution
+
 function maxChar(str) {
     const chars = {};
     var string = str.split("");
@@ -16,16 +20,24 @@ function maxChar(str) {
     for(let char of string){
         if(chars[char] > maxNum){
             maxNum = chars[char];
-        }
-        continue;
-    }
-    for(let char of string){
-        if(chars[char]==maxNum){
             maxLetter = char;
         }
         continue;
     }
     return maxLetter;
 }
+
+
+// NOTES
+// to iterate thru an Object
+// var charMap = {};
+// for(let char in charMap)
+
+// to iterate thru String or Array
+// const string = '';
+// for(let char of string)
+
+
+
 
 module.exports = maxChar;
