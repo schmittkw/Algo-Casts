@@ -17,4 +17,25 @@ function palindrome(str) {
     }
 }
 
+
+
+// most straight foward solution
+
+// function palindrome(str) {
+//     var reversed = str.split("").reverse().join("")
+//     return str === reversed
+// }
+
+
+
+// using an array helper "every"
+
+// function palindrome(str){
+//     return str.split("").every((char, i) => {
+//         return char ===str[str.length - 1 - i];
+//     });
+// }
+
+
+
 module.exports = palindrome;
