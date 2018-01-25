@@ -17,6 +17,14 @@
 //       '### '
 //       '####'
 
-function steps(n) {}
+function steps(n) {
+    var i = 1;
+    // console.log("#"*i + " "*(n-i));
+    while(i<=n){
+        var wrong = "#"
+        console.log(wrong*i)
+        i++;
+    }
+}
 
 module.exports = steps;
