@@ -26,4 +26,39 @@ function chunk(array, size) {
     return newArr;
 }
 
+
+
+// second solution
+
+// function chunk(array, size){
+//     const chunked = [];
+//     for(let element of array){
+//         const last = chunked[chunked.length-1];
+
+//         if(!last || last.length === size){
+//             chunked.push([element]);
+//         }
+//         else{
+//             last.push(element);
+//         }
+//     }
+//     return chunked;
+// }
+
+
+
+// third solution using slice
+
+// function chunk(array, size){
+//     const chunked = [];
+//     let i = 0;
+
+//     while (i < array.length){
+//         chunked.push(array.slice(i, i + size));
+//         i += size;
+//     }
+//     return chunked;
+// }
+
+
 module.exports = chunk;
