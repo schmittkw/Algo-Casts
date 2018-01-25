@@ -28,6 +28,7 @@ function anagrams(stringA, stringB) {
     }
     for(let char in strA){
         if(strA[char]==strB[char]){
+            debugger;
             continue
         }else{return false}
     }
