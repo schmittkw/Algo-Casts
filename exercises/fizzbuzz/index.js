@@ -12,6 +12,30 @@
 //   4
 //   buzz
 
-function fizzBuzz(n) {}
+
+
+// first solution
+
+function fizzBuzz(n) {
+    var i = 1;
+    while(i <= n){
+        if(i % 5 == 0 && i % 3 == 0){
+            console.log("fizzbuzz");
+            i++;
+        }
+        else if(i % 5 == 0){
+            console.log("buzz");
+            i++;
+        }
+        else if(i % 3 == 0){
+            console.log("fizz");
+            i++;
+        }
+        else{
+            console.log(i);
+            i++;
+        }
+    }
+}
 
 module.exports = fizzBuzz;
