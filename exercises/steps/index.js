@@ -17,14 +17,22 @@
 //       '### '
 //       '####'
 
+
+
 function steps(n) {
-    var i = 1;
-    // console.log("#"*i + " "*(n-i));
-    while(i<=n){
-        var wrong = "#"
-        console.log(wrong*i)
-        i++;
+  for (let row = 0; row < n; row++) {
+    let stair = '';
+
+    for (let column = 0; column < n; column++) {
+      if (column <= row) {
+        stair += '#';
+      } else {
+        stair += ' ';
+      }
     }
+
+    console.log(stair);
+  }
 }
 
 module.exports = steps;
